@@ -1,7 +1,7 @@
 {
     "name": "jquery-jsonpp",
     "description": "A jQuery plugin that implements JSONP using POST instead of GET",
-    "homepage": "https://jqueryjsonpp.org/",
+    "homepage": "https://github.com/Byrne-Labs/jquery-jsonpp/",
     "repository": {
         "type": "git",
         "url": "https://github.com/Byrne-Labs/jquery-jsonpp"
