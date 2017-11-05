@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27019.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "jQuery.jsonpp", "jQuery.jsonpp.njsproj", "{6A9CE2A6-DB16-4C6E-8682-97CABEE40192}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6A9CE2A6-DB16-4C6E-8682-97CABEE40192}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A9CE2A6-DB16-4C6E-8682-97CABEE40192}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A9CE2A6-DB16-4C6E-8682-97CABEE40192}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A9CE2A6-DB16-4C6E-8682-97CABEE40192}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E84C8B20-258C-4FBB-B171-93F093A20340}
+	EndGlobalSection
+EndGlobal

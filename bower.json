@@ -1,0 +1,28 @@
+{
+    "name": "jquery-jsonpp",
+    "description": "A jQuery plugin that implements JSONP using POST instead of GET",
+    "homepage": "https://jqueryjsonpp.org/",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Byrne-Labs/jquery-jsonpp/jquery.jsonpp.git"
+    },
+    "author": {
+        "name": "Jonathan Byrne",
+        "email": "jonathan.byrne@yahoo.com"
+    },
+    "main": "dist/jquery.jsonpp.js",
+    "keywords": [
+        "jquery",
+        "jquery-plugin",
+        "jsonp"
+    ],
+    "license": "MIT",
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components"
+    ],
+    "dependencies": {
+        "jquery": ">= 3.0.0"
+    }
+}
