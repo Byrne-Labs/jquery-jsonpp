@@ -4,7 +4,7 @@
     "homepage": "https://jqueryjsonpp.org/",
     "repository": {
         "type": "git",
-        "url": "https://github.com/Byrne-Labs/jquery-jsonpp/jquery.jsonpp.git"
+        "url": "https://github.com/Byrne-Labs/jquery-jsonpp"
     },
     "author": {
         "name": "Jonathan Byrne",
