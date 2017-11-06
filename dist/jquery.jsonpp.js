@@ -1,4 +1,4 @@
-﻿/*
+/*
  * jQuery JSONPP plugin v1.0.0-beta.1
  * Copyright (c) 2017 Jonathan Byrne
  *

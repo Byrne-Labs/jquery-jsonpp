@@ -21,9 +21,11 @@
     <Compile Include="gulpfile.js" />
     <Compile Include="src\jquery.jsonpp.js" />
     <Content Include="bower.json" />
+    <Content Include="jquery.jsonpp.nuspec">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="package.json" />
     <Content Include="README.md" />
-    <Content Include="tslint.json" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="src\" />

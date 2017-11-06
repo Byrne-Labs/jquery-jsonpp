@@ -19,6 +19,7 @@
     "license": "MIT",
     "ignore": [
         "**/.*",
+        "dist/*.nupkg",
         "node_modules",
         "bower_components"
     ],
