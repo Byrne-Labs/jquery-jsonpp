@@ -1,5 +1,5 @@
 ﻿/*
- * jQuery JSONPP plugin v1.0.0-beta.1
+ * jQuery JSONPP plugin v1.0.0-beta.2
  * Copyright (c) 2017 Jonathan Byrne
  *
  * https://github.com/Byrne-Labs/jquery-jsonpp

@@ -55,7 +55,7 @@ gulp.task(
     });
 
 gulp.task(
-    "npm-publish", ["package-javascript"],
+    "npm-publish", ["javascript-minify"],
     function(callback)
     {
         var username = argv.username;
