@@ -118,8 +118,8 @@ gulp.task(
             var usernameError = new Error("Nuget API key is required as an argument --nugetApiKey secret-key");
             return callback(usernameError);
         }
-        return gulp.src("project.1.0.0.nupkg")
-            .pipe(nuget.push({ source: "https://www.nuget.org/packages/jquery.jsonpp", apiKey: argv.nugetApiKey }));
+        return gulp.src("./jquery.jsonpp.nuspec")
+            .pipe(nuget.push({ source: "https://www.nuget.org/api/v2/package", apiKey: argv.nugetApiKey }));
     });
 
 gulp.task("default", ["clean", "javascript-minify", "nuget-download", "nuget-package"]);
