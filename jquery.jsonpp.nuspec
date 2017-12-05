@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
     <metadata>
         <id>jquery.jsonpp</id>
-        <version>1.0.0-beta3</version>
+        <version>1.0.0-beta4</version>
         <description>A jQuery implementation of JSONP that uses POST instead of GET.  Why?  Good question.  Some companies have the belief that a HTTP POST is inherently more secure than a HTTP GET for any type of RESTful service.  I will not waste time trying to explain how someone could arrive at this conclusion.  The unfortuante reality is that some people have to write software with these restrictions.</description>
         <authors>ByrneLabs</authors>
         <title>jQuery JSONPP</title>

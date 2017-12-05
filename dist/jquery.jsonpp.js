@@ -1,5 +1,5 @@
 /*
- * jQuery JSONPP plugin v1.0.0-beta.3
+ * jQuery JSONPP plugin v1.0.0-beta.4
  * Copyright (c) 2017 Jonathan Byrne
  *
  * https://github.com/Byrne-Labs/jquery-jsonpp
@@ -49,14 +49,11 @@
                     postOptions.contentType = "text/plain";
                     postOptions.success = undefined;
                     postOptions.complete = undefined;
-                    var callbackName = getCallbackName(options);
                     jQuery.post(postOptions)
                         .then(
                             function (data, textStatus, jqXHR)
                             {
                                 eval(data);
-                                options.success(window[callbackName + "_Data"][0]);
-                                options.complete();
                                 complete(jqXHR.status, "load");
                             });
                 },
