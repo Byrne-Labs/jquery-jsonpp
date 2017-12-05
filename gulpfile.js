@@ -19,6 +19,10 @@ var paths = {
     concatenatedMinified: "./dist/jquery.jsonpp.min.js"
 };
 
+gulp.task("default", ["build"]);
+
+gulp.task("build", ["clean", "javascript-minify", "nuget-download", "nuget-package"]);
+
 gulp.task(
     "clean",
     function()
@@ -39,17 +43,8 @@ gulp.task(
     "javascript-minify", ["javascript-concat"],
     function ()
     {
-        var uglifyOptions =
-        {
-            sourceMap:
-            {
-                filename: "jquery.jsonpp.js",
-                url: "jquery.jsonpp.js.map"
-            }
-            };
-
         return gulp.src(paths.concatenated)
-            .pipe(uglify(uglifyOptions))
+            .pipe(uglify())
             .pipe(rename(paths.concatenatedMinified))
             .pipe(gulp.dest("."));
     });
@@ -121,7 +116,5 @@ gulp.task(
         return gulp.src("./jquery.jsonpp.nuspec")
             .pipe(nuget.push({ source: "https://www.nuget.org/api/v2/package", apiKey: argv.nugetApiKey }));
     });
-
-gulp.task("default", ["clean", "javascript-minify", "nuget-download", "nuget-package"]);
 
 gulp.task("publish", ["default", "npm-publish", "nuget-publish"]);

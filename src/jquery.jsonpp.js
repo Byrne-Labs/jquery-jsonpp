@@ -1,5 +1,5 @@
 ﻿/*
- * jQuery JSONPP plugin v1.0.0-beta.2
+ * jQuery JSONPP plugin v1.0.0-beta.3
  * Copyright (c) 2017 Jonathan Byrne
  *
  * https://github.com/Byrne-Labs/jquery-jsonpp
@@ -40,8 +40,8 @@
                     var postOptions = jQuery.extend({}, options);
                     postOptions.type = "POST";
                     postOptions.async = false;
-                    postOptions.jsonpp = undefined;
-                    postOptions.jsonppCallback = undefined;
+                    postOptions.jsonp = undefined;
+                    postOptions.jsonpCallback = undefined;
                     postOptions.jsonpp = undefined;
                     postOptions.jsonppCallback = undefined;
                     postOptions.dataTypes = undefined;
@@ -52,31 +52,12 @@
                     var callbackName = getCallbackName(options);
                     jQuery.post(postOptions)
                         .then(
-                            function(data)
+                            function (data, textStatus, jqXHR)
                             {
-                                console.error(data);
-                                var script = jQuery("<script>")
-                                    .prop(
-                                        {
-                                            charset: options.scriptCharset,
-                                            text: data
-                                        })
-                                    .on(
-                                        "load error",
-                                        callback = function(evt)
-                                        {
-                                            var appManifest = window[callbackName + "_Data"][0];
-                                            script.remove();
-                                            callback = null;
-                                            if (evt)
-                                            {
-                                                options.success(appManifest);
-                                                options.complete();
-                                                complete(evt.type === "error" ? 404 : 200, evt.type);
-                                            }
-                                        }
-                                    );
-                                document.head.appendChild(script[0]);
+                                eval(data);
+                                options.success(window[callbackName + "_Data"][0]);
+                                options.complete();
+                                complete(jqXHR.status, "load");
                             });
                 },
                 abort: function()
